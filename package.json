@@ -1,0 +1,19 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Farid0558475484/Node.js.git"
+  },
+  "author": "Farid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Farid0558475484/Node.js/issues"
+  },
+  "homepage": "https://github.com/Farid0558475484/Node.js#readme"
+}
