@@ -1,10 +1,25 @@
 const http = require("http");
-let counter = 0;
+const fs = require("fs");
 
 const server = http.createServer((req, res) => {
-  counter++;
-  res.write("Salam :" + counter);
-  res.end();
+
+  switch (req.url) {
+    
+    case "/home": {
+      fs.readFile("pages/about.html", (err, data) => {
+        if (err) res.write("404 Not Found");
+        else res.write(data);
+        res.end();
+      });
+
+      break;
+    }
+
+    default: {
+      res.write("404 Not Found mau");
+      res.end();
+    }
+  }
 });
 
-server.listen(3005);
+server.listen(3000);
