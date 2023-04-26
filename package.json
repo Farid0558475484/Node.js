@@ -2,9 +2,12 @@
   "name": "node.js",
   "version": "1.0.0",
   "description": "node js",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx tsc -w",
+    "dev": "nodemon dist/index.js"
+
   },
   "repository": {
     "type": "git",
@@ -17,9 +20,14 @@
   },
   "homepage": "https://github.com/Farid0558475484/Node.js#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.16.1",
+    "express": "^4.18.2",
+    "ts-node": "^10.9.1",
+    "tsc-init": "^2.1.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "typescript": "^5.0.4"
   }
 }
