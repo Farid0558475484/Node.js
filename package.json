@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/Farid0558475484/Node.js/issues"
   },
-  "homepage": "https://github.com/Farid0558475484/Node.js#readme"
+  "homepage": "https://github.com/Farid0558475484/Node.js#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
 }
